@@ -1,0 +1,12 @@
+
+#riga {
+    margin: 53px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 75vh;
+    align-items: center;
+    border: 1px solid black;
+}
+

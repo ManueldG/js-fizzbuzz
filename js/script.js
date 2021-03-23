@@ -1,18 +1,29 @@
+var y;
 
 
-for (var i=1; i<=100;i++)
-{   
-    if (!(i%3)&&!(i%5))
-        console.log(" fizzbuzz ")
-    if (!(i%3))
-        console.log(" fizz");
-    if (!(i%5))
-        console.log(" buzz");
+for (var i=0; i<10;i++)
+{
     
-    if (i%5&&i%3)
-        console.log(i,"\n");
+    for(j=1; j<=10; j++)
+    {   
+         y=j+i*10;
+        
+        console.log(y);
+        document.getElementById("numero"+i).innerHTML+=" ";
+        if (!(y%3)&&!(y%5))
+            console.log(" fizzbuzz ")
+        if (!(y%3))
+            document.getElementById("numero"+i).innerHTML+=" fizz";
+        if (!(y%5))
+            document.getElementById("numero"+i).innerHTML+="buzz ";
+        
+        if (y%5&&y%3)
+            document.getElementById("numero"+i).innerHTML+= y;
+        document.getElementById("numero"+i).innerHTML+=" ";
+    }
+    
 }
-    
+        
 
 
 
