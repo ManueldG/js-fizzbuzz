@@ -1,30 +1,41 @@
 var y;
 
-
+document.write("<table>");
 for (var i=0; i<10;i++)
 {
     
     for(j=1; j<=10; j++)
     {   
          y=j+i*10;
-        
-        console.log(y);
         document.getElementById("numero"+i).innerHTML+=" ";
+        document.write("<td>");
         if (!(y%3)&&!(y%5))
             console.log(" fizzbuzz ")
-        if (!(y%3))
+        if (!(y%3)){
+            console.log("fizz")
             document.getElementById("numero"+i).innerHTML+=" fizz";
-        if (!(y%5))
+            document.write(" fizz");
+        }
+        if (!(y%5)){
+            console.log("buzz");
             document.getElementById("numero"+i).innerHTML+="buzz ";
+            document.write("buzz ")
+        }
         
-        if (y%5&&y%3)
+        if (y%5&&y%3){
+            console.log(y);
             document.getElementById("numero"+i).innerHTML+= y;
+            document.write(y);
+        }
+            
         document.getElementById("numero"+i).innerHTML+=" ";
+        document.write("</td>");
     }
+    document.write("</tr>\n");
     
 }
 
-;
+document.write("</table>\n");
         
 
 

@@ -1,12 +1,30 @@
 
-#riga {
+h2{
+    text-align: center;
+}
+
+#riga 
+{
     margin: 53px auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 300px;
-    height: 75vh;
+    height: 50vh;
     align-items: center;
     border: 1px solid black;
 }
 
+.table
+{   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width:50%;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid black;
+  }
